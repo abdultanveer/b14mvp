@@ -21,13 +21,11 @@
     <Button
         android:id="@+id/changeTextBt"
         android:text="put"
-        android:onClick="clickHandler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
         <Button
             android:id="@+id/get"
             android:text="get"
-            android:onClick="clickHandler"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
