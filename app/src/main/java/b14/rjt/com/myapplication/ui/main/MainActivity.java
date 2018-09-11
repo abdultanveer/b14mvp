@@ -3,8 +3,6 @@ package b14.rjt.com.myapplication.ui.main;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import b14.rjt.com.myapplication.R;
@@ -35,8 +33,8 @@ public class MainActivity extends AppCompatActivity implements IView {
 
 
     @Override
-    public void showToast() {
-        Toast.makeText(this, "button clicked", Toast.LENGTH_SHORT).show();
+    public void showToast(String todonote) {
+        Toast.makeText(this, todonote, Toast.LENGTH_SHORT).show();
     }
 
 

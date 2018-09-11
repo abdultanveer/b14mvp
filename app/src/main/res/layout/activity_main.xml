@@ -7,11 +7,11 @@
     android:orientation="vertical"
     tools:context=".ui.main.MainActivity">
     <EditText
-        android:id="@+id/editTextUserInput"
+        android:id="@+id/edittextTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
-        android:id="@+id/editTextTwo"
+        android:id="@+id/edittextSubTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <LinearLayout
@@ -19,13 +19,13 @@
         android:orientation="horizontal"
         android:layout_height="wrap_content">
     <Button
-        android:id="@+id/changeTextBt"
+        android:id="@+id/buttonPutDb"
         android:text="put"
         android:onClick="clickHandler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
         <Button
-            android:id="@+id/get"
+            android:id="@+id/buttonGetDb"
             android:text="get"
             android:onClick="clickHandler"
             android:layout_width="wrap_content"
