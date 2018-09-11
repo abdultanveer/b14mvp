@@ -17,7 +17,7 @@ public class DataManager implements  IDataManager{
 
     @Override
     public void readRow(OnResponseListener listener) {
-       //return dbHelper.readRow();
+        dbHelper.readRow(listener);
 
     }
 
