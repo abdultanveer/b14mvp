@@ -1,17 +1,28 @@
 package b14.rjt.com.myapplication.data;
 
+import android.content.Context;
+
 import b14.rjt.com.myapplication.data.database.DbHelper;
 import b14.rjt.com.myapplication.data.database.IDbHelper;
+import b14.rjt.com.myapplication.data.database.model.TodoNote;
 
 public class DataManager implements  IDataManager{
 
     IDbHelper dbHelper;
-    public DataManager() {
-        dbHelper = new DbHelper();
+    public DataManager(Context context) {
+        dbHelper = new DbHelper(context);
+    }
+
+
+
+    @Override
+    public void createRow(String title, String subTitle) {
+
     }
 
     @Override
-    public void createRow() {
+    public void createRow(TodoNote todoNote) {
+        dbHelper.createRow(todoNote);
 
     }
 
